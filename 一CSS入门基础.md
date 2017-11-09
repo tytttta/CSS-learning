@@ -2,7 +2,7 @@
 CSS 在网页制作中用来对页面的布局、字体、颜色、背景加以控制。
 
 CSS学习路径
-![CSS学习路径图片](ttps://github.com/tytttta/CSS-learning/pic.jpg);
+![CSS学习路径图片](https://github.com/tytttta/CSS-learning/blob/master/pic.jpg);
 
 # 二、CSS 基础语法规则
 ## 2.1 CSS规则有两个主要的部分构成：选择器，以及一条或多条声明。
