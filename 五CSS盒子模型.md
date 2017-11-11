@@ -115,6 +115,9 @@ p{margin:1px;}/*等价于 1px 1px 1px 1px*/
 
 ![外边距合并](https://github.com/tytttta/CSS-learning/blob/master/qq2.png)
 
+不同模块之间默认的状态是合并的状态。
+
+## 1.5CSS盒子模型的应用
 
 
 
