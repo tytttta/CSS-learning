@@ -7,6 +7,7 @@
 正文框的最内部分是实际的内容，直接包围内容的是内边距。内边距呈现了元素的背景。内边距的边缘是边框。边框以外是外边距，外边距默认是透明的。
 
 结构如下图：
+
 ![盒子模型的结构图](https://github.com/tytttta/CSS-learning/blob/master/qq.png)
 
 内边距、边框和外边距都是可选的。默认值是零。但是许多元素将由用户单独设置也可以使用通用选择器对所有元素进行设置，相当于一个初始化：
@@ -111,6 +112,7 @@ p{margin:1px;}/*等价于 1px 1px 1px 1px*/
 
 ### 外边距的合并
 合并前和合并后区别如下：
+
 ![外边距合并](https://github.com/tytttta/CSS-learning/blob/master/qq2.png)
 
 
