@@ -4,7 +4,7 @@
 
 整体效果如下图所示：
 
-![整体效果图]()
+![整体效果图](https://github.com/tytttta/CSS-learning/blob/master/q.png)
 
 首先分析整个网页的结构，可以将整个页面分为三个部分。
 
@@ -16,7 +16,7 @@
 
 用一张结构图可以描述这个页面的结构：
 
-![整体结构图]()
+![整体结构图](https://github.com/tytttta/CSS-learning/blob/master/q2.png)
 
 每个模块用一个div来描述就可以实现。
 
