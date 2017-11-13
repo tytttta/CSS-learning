@@ -186,6 +186,7 @@ html文件：
 这是是无边框的效果，在css中加入边框并指定颜色
 
 css文件：
+
 ````
 #tb,tr,th,td{
     border: 1px solid green;
@@ -194,12 +195,12 @@ css文件：
 
 我们可以通过CSS来定制列表。首先，使用border-collapse让整个列表边框合并为单线，在使用width、height来定制表格大小，之后用background-color加上背景颜色，
 text-align设置字符对齐方式，padding设置内边距。
+
 ````
 #tb td,th{
   border:1px solid greed;
   padding:5px;
- }
- 
+ } 
  #tb{
   border-collapse:collapse;
   width:500px;
@@ -214,7 +215,7 @@ text-align设置字符对齐方式，padding设置内边距。
   color:black;
   background-color:red;
 }
-
+````
 
 ## 1.4 轮廓
 轮廓是绘制于元素周围的一条线，位于边框边缘的外围，可以起到突出元素的作用。
@@ -234,7 +235,9 @@ HTML文件
 <p id="p1">shiyanlou1</p>
 <p id="p2">shiyanlou2</p>
 ````
+
 CSS 文件
+
 ````
 #p1{
   outline-color:red;
@@ -246,4 +249,4 @@ CSS 文件
   outline-style:dotted;
   outline-width:5px;
 }
-
+````
