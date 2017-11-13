@@ -27,7 +27,7 @@ box{
   padding:5px;
  }
  ````
- 外边距可以是负值，而且在很多情况下都要使用复制的外边距。
+ 外边距可以是负值，而且在很多情况下都要使用负值的外边距。
  
  ## 1.2CSS盒子模型内边距
  内边距在正文（content）外，边框（border）内。控制该区域最简单的属性是padding属性。padding属性定义元素边框与元素内容之间的空白区域。
@@ -118,6 +118,92 @@ p{margin:1px;}/*等价于 1px 1px 1px 1px*/
 不同模块之间默认的状态是合并的状态。
 
 ## 1.5CSS盒子模型的应用
+绘制下图所示的效果：
+
+![盒子模型应用](https://github.com/tytttta/CSS-learning/blob/master/qq3.png)
+
+分析整体结构：最上面是由两部分组成，最上面的是top，外边距都是0，上面还有个topcenter，上下边距为0，左右是居中状态。
+
+HTML文件
+````
+<div class="top">
+  <div class="topcenter"><h1>topcenter</h1></div>
+ </div>
+````
+CSS 文件
+````
+.top{
+  background-color:steelblue;
+  width:100px;
+  height:70px;
+  text-align:left;
+}
+.topcenter{
+    margin: 0px auto;/*左右自适应,上下为 0*/
+    width: 75%;
+    height: 70px;/*与 top 一样*/
+    background-color: cadetblue;
+    text-align: center;
+
+}
+````
+这样就能实现了最上面的两个模块：
+
+![盒子模型顶层模块](https://github.com/tytttta/CSS-learning/blob/master/qq4.png)
+
+接下来就是中间部分，可以将其分为三部分，第一部分就是middle，可以看出middle与上下文都有外边距的存在，接下来就是middle1 包含在middle中，宽度完全填充，高度自定义，middle2宽度完全填充，上外边距有规定。
+
+HTML文件:
+````
+<div class="middle">
+    <div class="middle1"><br/><h2>middle1</h2></div>
+    <br/>
+    <div class="middle2"><br/><h2>middle2</h2></div>
+</div>
+````
+CSS文件
+````
+.middle{
+    width: 75%;
+    height: 700px;
+    margin: 8px auto;
+    background-color: gray;
+}
+.middle1{
+    width: 100%;
+    height: 30%;
+    background-color: cadetblue;
+    margin: 0px;
+    text-align: center;
+}
+.middle2{
+    width: 100%;
+    height: 10%;
+    margin: 10px 0px;
+    background-color: darkgreen;
+    text-align: center;
+}
+````
+效果图如下：
+
+![盒子模型中间层](https://github.com/tytttta/CSS-learning/blob/master/qq5.png)
+
+最后再加一个底边
+
+HTML文件：
+````
+<div class="bottom"></div>
+````
+CSS 文件：
+````
+.bottom{
+    margin: 0px auto;
+    height: 50px;
+    background-color: darkslategrey;
+    width: 75%;
+}
+````
+这样就完成了盒子模型的设计。
 
 
 
